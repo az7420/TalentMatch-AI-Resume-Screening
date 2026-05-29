@@ -70,7 +70,7 @@ function CompareColumn({ candidate }: { candidate: CandidateListItem }) {
         </div>
       </div>
 
-      {ar?.matched_skills?.length > 0 && (
+      {ar?.matched_skills && ar.matched_skills.length > 0 && (
         <div className="mt-5">
           <h4 className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider mb-2">
             ✓ Matched Skills
@@ -85,7 +85,7 @@ function CompareColumn({ candidate }: { candidate: CandidateListItem }) {
         </div>
       )}
 
-      {ar?.missing_skills?.length > 0 && (
+      {ar?.missing_skills && ar.missing_skills.length > 0 && (
         <div className="mt-4">
           <h4 className="text-xs font-semibold text-red-600 dark:text-red-400 uppercase tracking-wider mb-2">
             ✗ Missing Skills

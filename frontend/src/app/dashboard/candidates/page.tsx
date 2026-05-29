@@ -114,7 +114,7 @@ function CandidateCard({ candidate, jdId }: { candidate: CandidateListItem; jdId
       )}
 
       {/* Missing skills */}
-      {candidate.analysis_result?.missing_skills?.length > 0 && (
+      {candidate.analysis_result?.missing_skills && candidate.analysis_result.missing_skills.length > 0 && (
         <div className="flex flex-wrap gap-1.5 mb-4">
           {candidate.analysis_result.missing_skills.slice(0, 3).map((s) => (
             <span key={s} className="skill-tag-missing">✗ {s}</span>
