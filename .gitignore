@@ -1,0 +1,41 @@
+# ──────────────────────────
+# Node / Frontend
+# ──────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+
+# ──────────────────────────
+# Python / Backend
+# ──────────────────────────
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/venv/
+backend/.venv/
+backend/.env
+backend/uploads/resumes/*
+backend/uploads/jd/*
+!backend/uploads/resumes/.gitkeep
+!backend/uploads/jd/.gitkeep
+
+# ──────────────────────────
+# Database
+# ──────────────────────────
+*.db
+*.sqlite
+
+# ──────────────────────────
+# Docker volumes
+# ──────────────────────────
+postgres_data/
+
+# ──────────────────────────
+# IDE / OS
+# ──────────────────────────
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+*.log
